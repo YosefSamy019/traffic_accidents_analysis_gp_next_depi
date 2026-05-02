@@ -4,7 +4,7 @@ This repository contains the graduation project proposal and subsequent analysis
 
 ---
 
-## ## Project Overview
+## Project Overview
 The primary objective is to analyze historical road traffic accident data within Egypt to identify key patterns, high-risk factors, and accident hotspots. By utilizing descriptive and diagnostic analysis, the project aims to support data-driven decision-making to reduce accident severity.
 
 ### ### Scope of Work
@@ -14,12 +14,12 @@ The primary objective is to analyze historical road traffic accident data within
 
 ---
 
-## ## Problem Statement
+## Problem Statement
 Road traffic accidents in Egypt represent a major public safety and economic challenge. Currently, a lack of structured analysis hinders the identification of critical risk factors and accident-prone areas. This project addresses these gaps by uncovering hidden patterns to support informed road safety planning.
 
 ---
 
-## ## Proposed Solution
+## Proposed Solution
 
 ### ### Technologies Used
 * **Excel:** Initial data inspection and preprocessing.
@@ -27,7 +27,7 @@ Road traffic accidents in Egypt represent a major public safety and economic cha
 * **SQL (MySQL):** Data storage, querying, and aggregation.
 * **Power BI:** Developing interactive dashboards and reporting.
 
-### ### System Architecture
+### System Architecture
 1.  **Data Collection:** Gathering data from publicly available Egyptian accident datasets.
 2.  **Preprocessing:** Cleaning and preparing data using Python and Excel.
 3.  **Storage:** Managing and querying data via SQL.
@@ -36,7 +36,7 @@ Road traffic accidents in Egypt represent a major public safety and economic cha
 
 ---
 
-## ## Expected Outcomes
+## Expected Outcomes
 * Identification of high-risk locations and peak accident time periods.
 * Deeper understanding of major contributing factors to road accidents.
 * Development of clear, visual dashboards for ongoing safety analysis.
@@ -44,7 +44,7 @@ Road traffic accidents in Egypt represent a major public safety and economic cha
 
 ---
 
-## ## Team Members
+## Team Members
 * **Ziad Abdelmaqsoud Ghallab**
 * **Youssef Samy Youssef**
 * **Islam Ahmed Ibrahim**
