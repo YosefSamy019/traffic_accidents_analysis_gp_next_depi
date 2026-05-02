@@ -7,7 +7,7 @@ This repository contains the graduation project proposal and subsequent analysis
 ## Project Overview
 The primary objective is to analyze historical road traffic accident data within Egypt to identify key patterns, high-risk factors, and accident hotspots. By utilizing descriptive and diagnostic analysis, the project aims to support data-driven decision-making to reduce accident severity.
 
-### ### Scope of Work
+### Scope of Work
 * **Data Analysis:** Examining historical datasets to identify trends based on time (year, month, day), location, causes, and severity.
 * **Analytics:** Performing descriptive and diagnostic data analysis.
 * **Visualization:** Designing interactive dashboards to visualize insights and support safety analysis.
@@ -21,7 +21,7 @@ Road traffic accidents in Egypt represent a major public safety and economic cha
 
 ## Proposed Solution
 
-### ### Technologies Used
+### Technologies Used
 * **Excel:** Initial data inspection and preprocessing.
 * **Python:** Data cleaning, transformation, and KPI calculation.
 * **SQL (MySQL):** Data storage, querying, and aggregation.
