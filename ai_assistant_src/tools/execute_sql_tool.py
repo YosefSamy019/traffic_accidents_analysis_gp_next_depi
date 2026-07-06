@@ -53,8 +53,7 @@ Returns structured results for agent recovery.
 
             conn = sqlite3.connect(DB_PATH)
             cursor = conn.cursor()
-            import streamlit as st
-            st.write(DB_PATH)
+
             sql = query.strip()
 
             if sql.lower().startswith("select"):

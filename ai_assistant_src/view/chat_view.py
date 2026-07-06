@@ -33,12 +33,6 @@ def build_chat():
         on_submit=handle_input,
     )
 
-    st.write(
-        ExecuteSQLTool().execute(
-            {'query': 'SELECT * FROM accidents LIMIT 1;'}
-        )
-    )
-
 
 def build_messages():
     for i, msg in enumerate(st.session_state[MSGS_KEY]):
