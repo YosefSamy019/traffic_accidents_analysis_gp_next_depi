@@ -11,7 +11,7 @@ def init():
         layout="wide",
     )
 
-    st.session_state.setdefault(API_KEY, 'AIzaSyAliYhfyOzToIsoquR9OESyEKGVxQnG2I8')
+    st.session_state.setdefault(API_KEY, '')
     st.session_state.setdefault(CALLS_COUNTER, 0)
     st.session_state.setdefault(AGENT_STATUS, AgentStatus.STOPPED)
     st.session_state.setdefault(MSGS_KEY, [
