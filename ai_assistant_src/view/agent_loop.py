@@ -36,14 +36,15 @@ def is_goal_achieved() -> bool:
 
 def call_model():
     try:
-        # client = OpenAI(
-        #     base_url=st.session_state.get(URL_KEY) + st.session_state.get(END_POINT_KEY),
-        #     api_key='111'
-        # )
+        api_key = st.session_state.get(API_KEY)
+
+        if api_key is None or str(api_key).strip() == "":
+            st.warning("API key is empty")
+            return
 
         client = OpenAI(
             base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-            api_key=st.session_state.get(API_KEY)
+            api_key=api_key
         )
 
         st.session_state[CALLS_COUNTER] = st.session_state[CALLS_COUNTER] + 1
