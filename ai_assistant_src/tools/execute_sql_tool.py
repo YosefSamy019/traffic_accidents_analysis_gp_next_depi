@@ -1,5 +1,6 @@
 import sqlite3
-
+from pathlib import Path
+import sqlite3
 from tools.tools import AgentTool
 
 
@@ -46,9 +47,14 @@ Returns structured results for agent recovery.
         conn = None
 
         try:
-            conn = sqlite3.connect("accidents_database.db")
-            cursor = conn.cursor()
 
+            CURRENT_DIR = Path(__file__).resolve().parent.parent
+            DB_PATH = CURRENT_DIR / "accidents_database.db"
+
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            import streamlit as st
+            st.write(DB_PATH)
             sql = query.strip()
 
             if sql.lower().startswith("select"):
