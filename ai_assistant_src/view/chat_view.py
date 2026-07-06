@@ -2,6 +2,7 @@ import streamlit as st
 
 from functions import get_active_chat_msgs
 from models.models import *
+from tools.execute_sql_tool import ExecuteSQLTool
 from values.const import *
 from view.common import add_message
 
@@ -30,6 +31,12 @@ def build_chat():
         "Ask the agent...",
         key=CHAT_KEY,
         on_submit=handle_input,
+    )
+
+    st.write(
+        ExecuteSQLTool().execute(
+            {'query': 'SELECT * FROM accidents LIMIT 1;'}
+        )
     )
 
 
