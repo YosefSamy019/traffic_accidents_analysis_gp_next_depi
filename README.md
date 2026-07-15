@@ -122,6 +122,9 @@ The agent runs on a lightweight, embedded SQLite database containing a single `a
 
 - **Scalability**: Adaptable to other databases and analytical domains.
 
+
+- **Test the agent**: [Click](https://trafficaccidentsanalysisgpnextdepi-czexsgqukyajbbtxj5dcta.streamlit.app/)
+
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
 
