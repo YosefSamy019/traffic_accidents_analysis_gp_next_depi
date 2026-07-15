@@ -1,0 +1,10 @@
+Column,Null Count,Null %
+ID,0,0.0
+Start_Time,0,0.0
+End_Time,0,0.0
+Severity,0,0.0
+City,0,0.0
+State,0,0.0
+Weather_Condition,0,0.0
+Pressure(in),21,0.1
+Visibility(mi),221,1.04

@@ -1,0 +1,86 @@
+-- ==========================================================
+-- Power BI DAX Measures for US Accidents Cleaned CSV
+-- Recommended table name: Accidents
+-- Update the table name in formulas if Power BI imports it with another name.
+-- ==========================================================
+
+Total Accidents = COUNTROWS('Accidents')
+
+Distinct Accident IDs = DISTINCTCOUNT('Accidents'[ID])
+
+Duplicate IDs = [Total Accidents] - [Distinct Accident IDs]
+
+Total States = DISTINCTCOUNT('Accidents'[State])
+
+Total Cities = DISTINCTCOUNT('Accidents'[City])
+
+Severity 4 Accidents =
+CALCULATE(
+    [Total Accidents],
+    'Accidents'[Severity] = 4
+)
+
+Severity 4 Rate % =
+DIVIDE([Severity 4 Accidents], [Total Accidents])
+
+Avg Distance Miles = AVERAGE('Accidents'[Distance(mi)])
+
+Avg Duration Minutes =
+AVERAGEX(
+    'Accidents',
+    DATEDIFF('Accidents'[Start_Time], 'Accidents'[End_Time], MINUTE)
+)
+
+Morning Accidents =
+CALCULATE(
+    [Total Accidents],
+    'Accidents'[Time_Slot] = "Morning"
+)
+
+Afternoon Accidents =
+CALCULATE(
+    [Total Accidents],
+    'Accidents'[Time_Slot] = "Afternoon"
+)
+
+Evening Accidents =
+CALCULATE(
+    [Total Accidents],
+    'Accidents'[Time_Slot] = "Evening"
+)
+
+Night Accidents =
+CALCULATE(
+    [Total Accidents],
+    'Accidents'[Time_Slot] = "Night"
+)
+
+Traffic Signal Accidents =
+CALCULATE([Total Accidents], 'Accidents'[Traffic_Signal] = TRUE())
+
+Crossing Accidents =
+CALCULATE([Total Accidents], 'Accidents'[Crossing] = TRUE())
+
+Junction Accidents =
+CALCULATE([Total Accidents], 'Accidents'[Junction] = TRUE())
+
+Weather Condition Count =
+COUNTROWS('Accidents')
+
+-- Suggested calculated columns
+Accident Year = YEAR('Accidents'[Start_Time])
+
+Accident Month = MONTH('Accidents'[Start_Time])
+
+Accident Hour = HOUR('Accidents'[Start_Time])
+
+Time Slot =
+SWITCH(
+    TRUE(),
+    HOUR('Accidents'[Start_Time]) >= 6 && HOUR('Accidents'[Start_Time]) <= 11, "Morning",
+    HOUR('Accidents'[Start_Time]) >= 12 && HOUR('Accidents'[Start_Time]) <= 17, "Afternoon",
+    HOUR('Accidents'[Start_Time]) >= 18 && HOUR('Accidents'[Start_Time]) <= 23, "Evening",
+    "Night"
+)
+
+Duration Minutes = DATEDIFF('Accidents'[Start_Time], 'Accidents'[End_Time], MINUTE)

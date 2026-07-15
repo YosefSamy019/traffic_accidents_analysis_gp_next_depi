@@ -1,0 +1,49 @@
+Column,Data Type,Null Count,Description
+ID,object,0,Unique accident identifier.
+Source,object,0,Original source provider from the dataset.
+Severity,int64,0,Accident severity level from 1 to 4.
+Start_Time,datetime64[ns],0,Accident start timestamp.
+End_Time,datetime64[ns],0,Accident end timestamp.
+Start_Lat,float64,0,Start latitude.
+Start_Lng,float64,0,Start longitude.
+Distance(mi),float64,0,Approximate distance impacted by the accident in miles.
+Street,object,0,Street name/location text.
+City,object,0,City of accident.
+County,object,0,County of accident.
+State,object,0,US state abbreviation.
+Zipcode,object,0,Postal code.
+Timezone,object,0,Timezone of the accident location.
+Temperature(F),float64,0,Temperature in Fahrenheit.
+Humidity(%),int64,0,Humidity percentage.
+Pressure(in),float64,21,Atmospheric pressure in inches.
+Visibility(mi),float64,221,Visibility in miles.
+Wind_Direction,object,0,Wind direction.
+Wind_Speed(mph),float64,0,Wind speed in mph.
+Weather_Condition,object,0,Weather description at or near accident time.
+Amenity,bool,0,Whether an amenity point is nearby.
+Bump,bool,0,Whether a road bump is nearby.
+Crossing,bool,0,Whether a crossing is nearby.
+Give_Way,bool,0,Whether a give-way sign is nearby.
+Junction,bool,0,Whether a junction is nearby.
+No_Exit,bool,0,Whether no-exit is nearby.
+Railway,bool,0,Whether a railway is nearby.
+Roundabout,bool,0,Whether a roundabout is nearby.
+Station,bool,0,Whether a station is nearby.
+Stop,bool,0,Whether a stop sign is nearby.
+Traffic_Calming,bool,0,Whether a traffic calming feature is nearby.
+Traffic_Signal,bool,0,Whether a traffic signal is nearby.
+Turning_Loop,bool,0,Whether a turning loop is nearby.
+Sunrise_Sunset,object,0,Day/night condition based on sunrise/sunset.
+Civil_Twilight,object,0,Civil twilight indicator.
+Nautical_Twilight,object,0,Nautical twilight indicator.
+Astronomical_Twilight,object,0,Astronomical twilight indicator.
+Duration_Minutes,float64,0,Dataset column.
+Accident_Year,int32,0,Dataset column.
+Accident_Month,int32,0,Dataset column.
+Accident_Hour,int32,0,Dataset column.
+Time_Slot,object,0,Dataset column.
+Duration_Minutes,decimal,0,Calculated in Power BI/SQL: difference between End_Time and Start_Time in minutes.
+Accident_Year,whole number,0,Year extracted from Start_Time.
+Accident_Month,whole number,0,Month extracted from Start_Time.
+Accident_Hour,whole number,0,Hour extracted from Start_Time.
+Time_Slot,text,0,"Categorizes Accident_Hour into Morning, Afternoon, Evening, and Night."
