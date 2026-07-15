@@ -66,7 +66,7 @@ accuracy.
 
 - Prepared the dataset for reliable analysis and interactive dashboard development.
 
-![img_7.png](img_7.png)
+![img_7.png](readme_images/img_7.png)
 
 ### 2. SQL Server — Analytical Workflow
 
@@ -74,8 +74,8 @@ accuracy.
 
 *(Further details on specific SQL queries and table structures can be added here if available.)*
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](readme_images/img.png)
+![img_1.png](readme_images/img_1.png)
 
 ### 3. Python — AI Query Agent
 
@@ -125,8 +125,8 @@ The agent runs on a lightweight, embedded SQLite database containing a single `a
 
 - **Test the agent**: [Click](https://trafficaccidentsanalysisgpnextdepi-czexsgqukyajbbtxj5dcta.streamlit.app/)
 
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![img_2.png](readme_images/img_2.png)
+![img_3.png](readme_images/img_3.png)
 
 ### 4. Power BI — Dashboard & Findings
 
@@ -166,9 +166,9 @@ related to severity, geography, and time.
 
 - Daytime accidents (55.86%) are more frequent than nighttime accidents (44.14%).
 
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
+![img_4.png](readme_images/img_4.png)
+![img_5.png](readme_images/img_5.png)
+![img_6.png](readme_images/img_6.png)
 
 ## Team Members
 
