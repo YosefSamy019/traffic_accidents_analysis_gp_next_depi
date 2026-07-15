@@ -12,6 +12,7 @@ def init():
     )
 
     st.session_state.setdefault(API_KEY, '')
+    st.session_state.setdefault(ERROR_MSG, '')
     st.session_state.setdefault(CALLS_COUNTER, 0)
     st.session_state.setdefault(AGENT_STATUS, AgentStatus.STOPPED)
     st.session_state.setdefault(MSGS_KEY, [

@@ -94,7 +94,7 @@ def call_model():
 
     except Exception as e:
         st.session_state[AGENT_STATUS] = AgentStatus.STOPPED
-        st.error(str(e))
+        st.session_state[ERROR_MSG] = str(e)
         print(e)
 
     finally:

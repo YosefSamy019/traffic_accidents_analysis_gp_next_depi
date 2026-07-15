@@ -5,6 +5,7 @@ CHAT_KEY = "chat_input"
 MSGS_KEY = "messages"
 AGENT_STATUS = 'agent_status'
 CALLS_COUNTER = 'calls_counter'
+ERROR_MSG = 'error_msg'
 
 VAL_MODELS = [
     "gemini-3.5-flash",

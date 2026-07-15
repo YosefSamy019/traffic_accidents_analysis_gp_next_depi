@@ -27,6 +27,9 @@ def build_chat():
         f'`Active Buffer Length`: {len(get_active_chat_msgs())} '
     )
 
+    if st.session_state[ERROR_MSG]:
+        st.error(st.session_state[ERROR_MSG])
+
     st.chat_input(
         "Ask the agent...",
         key=CHAT_KEY,
