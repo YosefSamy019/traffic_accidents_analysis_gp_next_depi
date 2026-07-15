@@ -94,7 +94,6 @@ def call_model():
 
     except Exception as e:
         st.session_state[AGENT_STATUS] = AgentStatus.STOPPED
-        raise e
         st.error(e)
         print(e)
 
